@@ -37,14 +37,20 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child:
-        const Text('ФИО - Рыбак Алина Игоревна\nНомер группы - ИКБО-11-22\nНомер студенческого билета - 22И0808\n',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-              fontSize: 20,
-              color: Colors.red
-          ),
-        ),
+          child:
+          ElevatedButton(
+            onPressed: null,
+            style: ButtonStyle(
+                backgroundColor: WidgetStateProperty.all(Colors.amber),
+                shape:
+                WidgetStateProperty.all(
+                    RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30)
+                    )
+                )
+            ),
+            child: Text("Тестовая кнопка"),
+          )
       ),
     );
   }
