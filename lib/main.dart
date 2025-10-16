@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
           child:
-          Column(
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text('ФИО - Рыбак Алина Игоревна\nНомер группы - ИКБО-11-22\nНомер студенческого билета - 22И0808\n',
