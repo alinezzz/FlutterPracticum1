@@ -41,16 +41,15 @@ class _MyHomePageState extends State<MyHomePage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Text('ФИО - Рыбак Алина Игоревна\nНомер группы - ИКБО-11-22\nНомер студенческого билета - 22И0808\n',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontSize: 20,
-                    color: Colors.amber
+              Padding(
+                padding: EdgeInsets.all(100),
+                child: Text('ФИО - Рыбак Алина Игоревна\nНомер группы - ИКБО-11-22\nНомер студенческого билета - 22И0808\n',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.amber
+                  ),
                 ),
-              ),
-              const SizedBox(
-                width: 100,
-                height: 50,
               ),
               ElevatedButton(
                 onPressed: null,
